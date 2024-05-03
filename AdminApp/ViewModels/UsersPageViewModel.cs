@@ -67,6 +67,9 @@ public partial class UsersPageViewModel : ObservableObject
             }
 
             Models.Remove(Models.Where(e => e.Id == id).First());
+            var list = new List<UserDto>(Models);
+            list.ForEach(e => e.Stt = list.IndexOf(e) + 1);
+            Models = new ObservableCollection<UserDto>(list);
 
             IsBusy = false;
         }

@@ -92,6 +92,9 @@ public partial class ProductsViewModel : ObservableObject
             }
 
             Models.Remove(Models.Where(e => e.Id == id).First());
+            var list = new List<ProductDto>(Models);
+            list.ForEach(e => e.Stt = list.IndexOf(e) + 1);
+            Models = new ObservableCollection<ProductDto>(list);
 
             IsBusy = false;
         }

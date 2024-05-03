@@ -19,10 +19,10 @@ public partial class LoginViewModel : ObservableObject
     }
 
     [ObservableProperty]
-    private string userName = "naidung";
+    private string userName = "";
 
     [ObservableProperty]
-    private string password = "1306";
+    private string password = "";
 
     [ObservableProperty]
     private bool buttonEnable = true;

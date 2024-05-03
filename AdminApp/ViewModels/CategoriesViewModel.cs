@@ -73,6 +73,11 @@ public partial class CategoriesViewModel : ObservableObject
 
             Models.Remove(Models.Where(e => e.Id == id).First());
 
+            Models.Remove(Models.Where(e => e.Id == id).First());
+            var list = new List<CategoryDto>(Models);
+            list.ForEach(e => e.Stt = list.IndexOf(e) + 1);
+            Models = new ObservableCollection<CategoryDto>(list);
+
             IsBusy = false;
         }
     }

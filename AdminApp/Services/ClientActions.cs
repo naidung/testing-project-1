@@ -50,7 +50,8 @@ public class ClientActions : IClientActions
             {
                 return new APIResult
                 {
-                    Status = EAPIStatus.LoginRequest
+                    Status = EAPIStatus.ErrorHasMsg,
+                    Msg = "Bạn không có | hết hạn quyền trên tác vụ này. Vui lòng kiểm tra lại"
                 };
             }
             string responseBody = await response.Content.ReadAsStringAsync();
@@ -85,7 +86,8 @@ public class ClientActions : IClientActions
             {
                 return new APIResult
                 {
-                    Status = EAPIStatus.LoginRequest
+                    Status = EAPIStatus.ErrorHasMsg,
+                    Msg = "Bạn không có | hết hạn quyền trên tác vụ này. Vui lòng kiểm tra lại"
                 };
             }
             string responseBody = await response.Content.ReadAsStringAsync();
@@ -125,7 +127,8 @@ public class ClientActions : IClientActions
             {
                 return new APIResult
                 {
-                    Status = EAPIStatus.LoginRequest
+                    Status = EAPIStatus.ErrorHasMsg,
+                    Msg = "Bạn không có | hết hạn quyền trên tác vụ này. Vui lòng kiểm tra lại"
                 };
             }
             string responseBody = await response.Content.ReadAsStringAsync();
@@ -158,7 +161,8 @@ public class ClientActions : IClientActions
             {
                 return new APIResult
                 {
-                    Status = EAPIStatus.LoginRequest
+                    Status = EAPIStatus.ErrorHasMsg,
+                    Msg = "Bạn không có | hết hạn quyền trên tác vụ này. Vui lòng kiểm tra lại"
                 };
             }
             string responseBody = await response.Content.ReadAsStringAsync();
