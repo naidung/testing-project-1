@@ -6,7 +6,7 @@ ASP.Net Web API, WPF
 - Back-end: Web API
 - Front-end: WPF
 
-- Mặc dù quen với việc xây dựng database sử dụng Postgres, nhưng nếu dùng nó thì có thể gây khó khăn trong việc xem kết quả đã làm nên Sqlite đã được chọn. File database nằm trong root folder của web-api project với tên database.db. Có thể sử dụng tools (DBeauver...) để kết nối vào đây và theo dõi cấu trúc database
+- Mặc dù quen với việc xây dựng database sử dụng Postgres, nhưng nếu dùng nó thì có thể gây khó khăn cho người đánh giá + là test project nên không quá đặt nặng an toàn database, vì vậy Sqlite đã được chọn. File database nằm trong root folder của web-api project với tên database.db. Có thể sử dụng tools (DBeauver...) để kết nối vào đây và theo dõi cấu trúc database
 - Back-end sử dụng nền tảng ASP.NET Web API, có áp dụng Entity Framework vào để thực hiện các tác vụ với database. Back-end này phục vụ luôn cho việc xây dựng WPF app, nghĩa là WPF app là 1 client, sử dụng các API từ back-end đã xây dựng, không trực tiếp access database
 - Theo yêu cầu bài 3, tôi quyết định chọn WPF để thực hiện.
 - Framework version là .Net 8.0.200
