@@ -14,11 +14,9 @@ ASP.Net Web API, WPF
 ## Cách chạy để kiểm tra kết quả
 
 - Kiểm tra để cài đặt môi trường (.net 8) nếu cần
-- Mở WebAPI project và chạy để run back-end. Có thể sử dụng cli (dotnet run) hoặc start trên Visual Studio với chế độ http
-  Sau khi chạy, sẽ cho phép backend hoạt động ở http://localhost:7001. Đây chính là cổng mà WPF app dùng để sử dụng APIs của back-end
-  Sau khi hoàn thành, trình duyệt sẽ tự động mở tại địa chỉ http://localhost:7001/swagger/index.html. Có thể xem kết quả web-api tại đây. Nhưng đa phần yêu cầu xác thực nên hầu như không thể gọi api trực tiếp tại đây
+- Mở WebAPI project và chạy để run back-end. Có thể sử dụng cli (dotnet run) hoặc start trên Visual Studio với chế độ http.
+  Sau khi chạy, sẽ cho phép backend hoạt động ở http://localhost:7001. Đây chính là cổng mà WPF app dùng để sử dụng APIs của back-end.
+  Sau khi hoàn thành, trình duyệt sẽ tự động mở tại địa chỉ http://localhost:7001/swagger/index.html. Có thể xem kết quả web-api tại đây.
+  Nhưng đa phần yêu cầu xác thực nên hầu như không thể gọi api trực tiếp tại đây
 - Mở AdminApp để run bằng lệnh cli hoặc editor
-  Sử dụng tài khoản:
-  user name: admin
-  password: 123
-  để sử dụng ứng dụng với quyền admin (full quyền)
+- Sử dụng tài khoản sau để sử dụng ứng dụng với quyền admin (full quyền): admin | 123
